@@ -6,12 +6,12 @@ Array.prototype.shuffle = function() {
 }
 //preload the images
 var picData = [
-    ['./img/8x10-untitled-bonin-install-tone.jpg','hello','artist 1'],
-    ['./img/8x10-works_decapgrgice-lrg.jpg','t-shirt 2','artist 2'],
+    ['./img/8x10-untitled-bonin-install-tone.jpg','Untitled (Bonin)','Inkjet on book page / 11 . 9.25" / 2017'],
+    ['./img/8x10-works_decapgrgice-lrg.jpg','Richard Hawkins Decapitated Head (Ben, Ice)','archival inkjet / 48 x 36" / 2007'],
     // ['./img/8x19-getin-3.jpg','t-shirt 3','artist 3'],
     // ['./img/8x10-untitled-bonin-install-tone.jpg','t-shirt 4','artist 4'],
     // ['./img/8x10-works_decapgrgice-lrg.jpg','t-shirt 5','artist 5'],
-    ['./img/8x19-getin-3.jpg','t-shirt 6','artist 6']];
+    ['./img/8x19-getin-3.jpg','Get In','photograph / 17 x 13" / 2011']];
 picO = new Array();
 randIndex = new Array();  //array of random indexes
 for(i=0; i < picData.length; i++){
@@ -23,8 +23,8 @@ randIndex.shuffle();
 window.onload=function(){
     var mainImgs = document.getElementById('main_image').getElementsByTagName('img');
     var otherImgs = document.getElementById('other_image').getElementsByTagName('img');
-    var tshirtDivs = getElementsByClassName(document, 'div', 'tshirtName');
-    var artistDivs = getElementsByClassName(document, 'div', 'artistName');
+    var tshirtDivs = getElementsByClassName(document, 'div', 'imageTitle');
+    var artistDivs = getElementsByClassName(document, 'div', 'description');
     //assign the main image data
     for(i=0; i < mainImgs.length; i++){
         mainImgs[i].src = picO[randIndex[i]].src; //assign a random image
