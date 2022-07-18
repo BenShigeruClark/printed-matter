@@ -22,7 +22,7 @@ for(i=0; i < picData.length; i++){
 randIndex.shuffle();
 window.onload=function(){
     var mainImgs = document.getElementById('main_image').getElementsByTagName('img');
-    var otherImgs = document.getElementById('other_image').getElementsByTagName('img');
+    // var otherImgs = document.getElementById('other_image').getElementsByTagName('img');
     var tshirtDivs = getElementsByClassName(document, 'div', 'imageTitle');
     var artistDivs = getElementsByClassName(document, 'div', 'description');
     //assign the main image data
@@ -32,8 +32,10 @@ window.onload=function(){
         artistDivs[i].innerHTML = picData[randIndex[i]][2];
     }
     //assign the other image data
-    for(i=mainImgs.length; i < otherImgs.length+mainImgs.length; i++){
-        otherImgs[i-mainImgs.length].src = picO[randIndex[i]].src;
+    // for(i=mainImgs.length; i < otherImgs.length+mainImgs.length; i++){
+        // otherImgs[i-mainImgs.length].src = picO[randIndex[i]].src;
+    for(i=mainImgs.length; i < mainImgs.length; i++){
+        [i-mainImgs.length].src = picO[randIndex[i]].src;
         tshirtDivs[i].innerHTML = picData[randIndex[i]][1];
         artistDivs[i].innerHTML = picData[randIndex[i]][2];
     }
