@@ -8,9 +8,12 @@ Array.prototype.shuffle = function() {
 var picData = [
     ['./img/8x10-untitled-bonin-install-tone.jpg','Untitled (Bonin)','Inkjet on book page / 11 . 9.25" / 2017'],
     ['./img/8x10-works_decapgrgice-lrg.jpg','Richard Hawkins Decapitated Head (Ben, Ice)','archival inkjet / 48 x 36" / 2007'],
-    // ['./img/8x19-getin-3.jpg','t-shirt 3','artist 3'],
-    // ['./img/8x10-untitled-bonin-install-tone.jpg','t-shirt 4','artist 4'],
-    // ['./img/8x10-works_decapgrgice-lrg.jpg','t-shirt 5','artist 5'],
+    ['./img/8x19-getin-3.jpg','Get In','photograph / 17 x 13" / 2011'],
+    ['./img/8x10-untitled-bonin-install-tone.jpg','Untitled (Bonin)','Inkjet on book page / 11 . 9.25" / 2017'],
+    ['./img/8x10-works_decapgrgice-lrg.jpg','Richard Hawkins Decapitated Head (Ben, Ice)','archival inkjet / 48 x 36" / 2007'],
+    ['./img/8x19-getin-3.jpg','Get In','photograph / 17 x 13" / 2011'],
+    ['./img/8x10-untitled-bonin-install-tone.jpg','Untitled (Bonin)','Inkjet on book page / 11 . 9.25" / 2017'],
+    ['./img/8x10-works_decapgrgice-lrg.jpg','Richard Hawkins Decapitated Head (Ben, Ice)','archival inkjet / 48 x 36" / 2007'],
     ['./img/8x19-getin-3.jpg','Get In','photograph / 17 x 13" / 2011']];
 picO = new Array();
 randIndex = new Array();  //array of random indexes
