@@ -20,6 +20,12 @@ var picData = [
     ['./img/8x19-getin-3.jpg','Get In','photograph / 17 x 13" / 2011'],
     ['./img/8x10-untitled-bonin-install-tone.jpg','Untitled (Bonin)','Inkjet on book page / 11 . 9.25" / 2017'],
     ['./img/8x10-works_decapgrgice-lrg.jpg','Richard Hawkins Decapitated Head (Ben, Ice)','archival inkjet / 48 x 36" / 2007'],
+    ['./img/8x19-getin-3.jpg','Get In','photograph / 17 x 13" / 2011'],
+    ['./img/8x10-untitled-bonin-install-tone.jpg','Untitled (Bonin)','Inkjet on book page / 11 . 9.25" / 2017'],
+    ['./img/8x10-works_decapgrgice-lrg.jpg','Richard Hawkins Decapitated Head (Ben, Ice)','archival inkjet / 48 x 36" / 2007'],
+    ['./img/8x19-getin-3.jpg','Get In','photograph / 17 x 13" / 2011'],
+    ['./img/8x10-untitled-bonin-install-tone.jpg','Untitled (Bonin)','Inkjet on book page / 11 . 9.25" / 2017'],
+    ['./img/8x10-works_decapgrgice-lrg.jpg','Richard Hawkins Decapitated Head (Ben, Ice)','archival inkjet / 48 x 36" / 2007'],
     ['./img/8x19-getin-3.jpg','Get In','photograph / 17 x 13" / 2011']];
 picO = new Array();
 randIndex = new Array();  //array of random indexes
