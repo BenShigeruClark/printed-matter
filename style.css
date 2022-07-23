@@ -26,6 +26,8 @@ nav ul li a {
     font-size: 10pt;
     padding: 8px 10px;
     text-decoration: none;
+    align-items: center;
+    justify-content: center;
 }
 
 nav ul li a:hover {
@@ -64,6 +66,7 @@ nav ul li ul li a:hover {
     justify-content: center;
     align-items: center;
     padding-top: 2%;
+    padding-left: 5%;
     display: grid;
     grid-template-columns: auto auto auto;
 }
