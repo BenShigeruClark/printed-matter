@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Printed Matter</title>
     <link rel="stylesheet" href="./style.css" type="text/css">
+
 </head>
 <body>
     <!-- Header Nav section -->
-    <header>
+    <!-- <header>
         <div class="container">
               <nav>
                 
@@ -88,9 +89,13 @@
                   </ul>
             </nav>
           </div>
-    </header>
+    </header> -->
         <!-- End of Header Nav section -->
-
+        <script>
+            $(function(){
+                $('#header').load('./header-nav-bar.html');
+            });
+        </script>
         <main class="main-container">
             <ul id="main_image">
                 <li>
@@ -149,7 +154,8 @@
                 </li>    
             </ul>
         </main>
-
     <script src="./app.js"></script>
+    <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+    
 </body>
 </html>
