@@ -6,27 +6,13 @@ Array.prototype.shuffle = function() {
 }
 //preload the images
 var picData = [
-    ['./img/8x10-untitled-bonin-install-tone.jpg','Untitled (Bonin)','Inkjet on book page / 11 . 9.25" / 2017'],
+    ['./img/brian-kennon-untitled-bonin-index-1.jpg','Untitled (Bonin)','Inkjet on book page / 11 . 9.25" / 2017'],
     ['./img/8x10-works_decapgrgice-lrg.jpg','Richard Hawkins Decapitated Head (Ben, Ice)','archival inkjet / 48 x 36" / 2007'],
-    ['./img/8x19-getin-3.jpg','Get In','photograph / 17 x 13" / 2011'],
-    ['./img/8x10-untitled-bonin-install-tone.jpg','Untitled (Bonin)','Inkjet on book page / 11 . 9.25" / 2017'],
-    ['./img/8x10-works_decapgrgice-lrg.jpg','Richard Hawkins Decapitated Head (Ben, Ice)','archival inkjet / 48 x 36" / 2007'],
-    ['./img/8x19-getin-3.jpg','Get In','photograph / 17 x 13" / 2011'],
-    ['./img/8x10-untitled-bonin-install-tone.jpg','Untitled (Bonin)','Inkjet on book page / 11 . 9.25" / 2017'],
-    ['./img/8x10-works_decapgrgice-lrg.jpg','Richard Hawkins Decapitated Head (Ben, Ice)','archival inkjet / 48 x 36" / 2007'],
-    ['./img/8x19-getin-3.jpg','Get In','photograph / 17 x 13" / 2011'],
-    ['./img/8x10-untitled-bonin-install-tone.jpg','Untitled (Bonin)','Inkjet on book page / 11 . 9.25" / 2017'],
-    ['./img/8x10-works_decapgrgice-lrg.jpg','Richard Hawkins Decapitated Head (Ben, Ice)','archival inkjet / 48 x 36" / 2007'],
-    ['./img/8x19-getin-3.jpg','Get In','photograph / 17 x 13" / 2011'],
-    ['./img/8x10-untitled-bonin-install-tone.jpg','Untitled (Bonin)','Inkjet on book page / 11 . 9.25" / 2017'],
-    ['./img/8x10-works_decapgrgice-lrg.jpg','Richard Hawkins Decapitated Head (Ben, Ice)','archival inkjet / 48 x 36" / 2007'],
-    ['./img/8x19-getin-3.jpg','Get In','photograph / 17 x 13" / 2011'],
-    ['./img/8x10-untitled-bonin-install-tone.jpg','Untitled (Bonin)','Inkjet on book page / 11 . 9.25" / 2017'],
-    ['./img/8x10-works_decapgrgice-lrg.jpg','Richard Hawkins Decapitated Head (Ben, Ice)','archival inkjet / 48 x 36" / 2007'],
-    ['./img/8x19-getin-3.jpg','Get In','photograph / 17 x 13" / 2011'],
-    ['./img/8x10-untitled-bonin-install-tone.jpg','Untitled (Bonin)','Inkjet on book page / 11 . 9.25" / 2017'],
-    ['./img/8x10-works_decapgrgice-lrg.jpg','Richard Hawkins Decapitated Head (Ben, Ice)','archival inkjet / 48 x 36" / 2007'],
-    ['./img/8x19-getin-3.jpg','Get In','photograph / 17 x 13" / 2011']];
+    ['./img/brian-kennon-new-partners-index-1.jpg','Get In','photograph / 17 x 13" / 2011'],
+    ['./img/brian-kennon-2nd-cannons-zine-index-1.jpg','2nd Cannons Zine (Matias Faldbakken) ','Zine / 2021'],
+    ['./img/brian-kennon-pages-benedict-bonin-index-2.jpg','Pages (Benedict, Bonin) ','Collage / 2018'],
+    ['./img/brian-kennon-with-trockel-index-1.jpg','With Rosemarie Trockel','Collage / 2021'],
+    ['./img/brian-kennon-with-wool-index-1.jpg', 'With Christopher Wool','Collage / 2019']];
 picO = new Array();
 randIndex = new Array();  //array of random indexes
 for(i=0; i < picData.length; i++){
@@ -37,7 +23,6 @@ for(i=0; i < picData.length; i++){
 randIndex.shuffle();
 window.onload=function(){
     var mainImgs = document.getElementById('main_image').getElementsByTagName('img');
-    // var otherImgs = document.getElementById('other_image').getElementsByTagName('img');
     var tshirtDivs = getElementsByClassName(document, 'div', 'imageTitle');
     var artistDivs = getElementsByClassName(document, 'div', 'description');
     //assign the main image data
@@ -47,8 +32,6 @@ window.onload=function(){
         artistDivs[i].innerHTML = picData[randIndex[i]][2];
     }
     //assign the other image data
-    // for(i=mainImgs.length; i < otherImgs.length+mainImgs.length; i++){
-        // otherImgs[i-mainImgs.length].src = picO[randIndex[i]].src;
     for(i=mainImgs.length; i < mainImgs.length; i++){
         [i-mainImgs.length].src = picO[randIndex[i]].src;
         tshirtDivs[i].innerHTML = picData[randIndex[i]][1];

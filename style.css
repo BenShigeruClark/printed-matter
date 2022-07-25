@@ -86,18 +86,19 @@ a {
 
 .responsive {
     width: 50%;
-
-    max-width: 75%;
+    max-width: 100%;
     height: inherit;
     display: block;
     align-items: center;
     justify-content: center;
+    /* padding-left: 50px; */
 }
 
 img {
     /* height: 25%; */
     justify-content: center;
     align-items: center;
+    padding-right: 22px;
 }
 
 .text-overlay {
