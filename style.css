@@ -163,3 +163,16 @@ img {
 /* .content li {
     text-align-last: center;
 } */
+
+@media only screen and (max-width: 1600px) {
+    .main-container {
+        grid-template-columns: 1fr 1fr 0fr;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .main-container {
+        grid-template-columns: 1fr 0fr 0fr;
+    }
+}
